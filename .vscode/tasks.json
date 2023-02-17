@@ -1,0 +1,56 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build & Run Software",
+            "type": "shell",
+            "command": "cargo run",
+            "options": {
+                "cwd": "${workspaceFolder}/src",
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": [
+                "$rustc"
+            ], 
+            "isDefault": true
+        },{
+            "label": "Build Release Software",
+            "type": "shell",
+            "command": "cargo build --release",
+            "options": {
+                "cwd": "${workspaceFolder}/src",
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": [
+                "$rustc"
+            ], 
+            "isDefault": true
+        },{
+            "label": "Check Software",
+            "type": "shell",
+            "command": "cargo check",
+            "options": {
+                "cwd": "${workspaceFolder}/src",
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": [
+                "$rustc"
+            ], 
+            "isDefault": true
+        }
+    ]
+}
