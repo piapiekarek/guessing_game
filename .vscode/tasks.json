@@ -51,6 +51,22 @@
                 "$rustc"
             ], 
             "isDefault": true
+        },{
+            "label": "Open Documentation",
+            "type": "shell",
+            "command": "cargo doc --open",
+            "options": {
+                "cwd": "${workspaceFolder}/src",
+            },
+            "group": "doc",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": [
+                "$rustc"
+            ], 
+            "isDefault": true
         }
     ]
 }
